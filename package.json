@@ -1,0 +1,13 @@
+{
+  "name": "frida-ts-agent",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "frida-compile src/main.ts -o dist/main.js -c",
+    "load": "frida -l dist/main.js"
+  },
+  "devDependencies": {
+    "@types/frida-gum": "^18.7.0",
+    "@types/node": "^18.19.26",
+    "frida-compile": "^16.4.1"
+  }
+}
